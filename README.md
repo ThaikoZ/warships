@@ -34,11 +34,11 @@ Aby zainstalować grę "Warships", wykonaj poniższe kroki:
 
 1. **Pobierz repozytorium**:
     ```bash
-    git clone https://github.com/adriansudak/gra-w-statki.git
+    git clone https://github.com/ThaikoZ/gra-w-statki.git
     ```
 2. **Przejdź do katalogu z grą**:
     ```bash
-    cd gra-w-statki
+    cd gra-w-statki/gra-w-statki
     ```
 3. **Skompiluj projekt**:
     ```bash
@@ -60,7 +60,7 @@ Aby uruchomić grę, użyj poniższej komendy w terminalu:
 
 ## Autor
 
-- **Adrian Sudak** - Autor projektu, wykonał całą pracę
+- **Adrian Sudak** - Autor projektu.
 
 ## Licencja
 
