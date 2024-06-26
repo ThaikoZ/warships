@@ -1,103 +1,103 @@
-# Warships - Gra w Statki
+# Warships - Battleship Game
 
-## Spis Treści
-1. [Opis Gry](#opis-gry)
-2. [Zasady Gry](#zasady-gry)
-3. [Instrukcja Instalacji](#instrukcja-instalacji)
-4. [Uruchomienie Gry](#uruchomienie-gry)
-5. [Sterowanie](#sterowanie)
-6. [Autor](#autor)
-7. [Licencja](#licencja)
+## Table of Contents
+1. [Game Description](#game-description)
+2. [Game Rules](#game-rules)
+3. [Installation Instructions](#installation-instructions)
+4. [Launching the Game](#launching-the-game)
+5. [Controls](#controls)
+6. [Author](#author)
+7. [License](#license)
 
-## Opis Gry
+## Game Description
 
-"Warships" to klasyczna gra w statki, w której dwóch graczy próbuje zatopić nawzajem swoje floty. Każdy gracz posiada planszę o wymiarach 10x10 pól, na której umieszcza swoje statki. Celem gry jest odgadnięcie, na których polach przeciwnik umieścił swoje statki i zatopienie ich przed przeciwnikiem.
+"Warships" is a classic battleship game where two players attempt to sink each other's fleets. Each player has a 10x10 grid on which they place their ships. The objective of the game is to guess the coordinates of the opponent's ships and sink them before the opponent sinks yours.
 
-## Zasady Gry
+## Game Rules
 
-1. **Ustawienie statków**:
-    - Każdy gracz ma do dyspozycji flotę składającą się z następujących statków:
-        - 1x Lotniskowiec (5 pól)
-        - 2x Pancernik (4 pola)
-        - 3x Krążownik (3 pola)
-        - 2x Niszczyciel (2 pola)
-    - Statki mogą być umieszczane poziomo lub pionowo, ale nie mogą się stykać ani krzyżować.
+1. **Setting Up Ships**:
+    - Each player has a fleet consisting of the following ships:
+        - 1x Aircraft Carrier (5 cells)
+        - 2x Battleship (4 cells)
+        - 3x Cruiser (3 cells)
+        - 2x Destroyer (2 cells)
+    - Ships can be placed horizontally or vertically, but they cannot touch or overlap.
 
-2. **Rozgrywka**:
-    - Gracze na zmianę wykonują ruchy, zgadując współrzędne na planszy przeciwnika (np. A5, C3).
-    - Jeśli trafienie jest celne, gracz oznacza to na swojej planszy trafień.
-    - Gra kończy się, gdy wszystkie statki jednego z graczy zostaną zatopione.
+2. **Gameplay**:
+    - Players take turns guessing coordinates on the opponent's grid (e.g., A5, C3).
+    - If a guess is a hit, the player marks it on their hit grid.
+    - The game ends when all ships of one player are sunk.
 
-## Instrukcja Instalacji
+## Installation Instructions
 
-Aby zainstalować grę "Warships", wykonaj poniższe kroki:
+To install the game "Warships", follow these steps:
 
-1. **Pobierz repozytorium**:
+1. **Download the repository**:
     ```bash
     git clone https://github.com/ThaikoZ/gra-w-statki.git
     ```
-2. **Przejdź do katalogu z grą**:
+2. **Navigate to the game directory**:
     ```bash
     cd gra-w-statki/gra-w-statki
     ```
-3. **Skompiluj projekt**:
+3. **Compile the project**:
     ```bash
     g++ -o gra-w-statki gra-w-statki.cpp Game.cpp Player.cpp Ships.cpp ShipsInConsole.cpp Engine.cpp
     ```
 
-## Uruchomienie Gry
+## Launching the Game
 
-Aby uruchomić grę, użyj poniższej komendy w terminalu:
+To start the game, use the following command in the terminal:
 
 ```bash
 ./gra-w-statki
 ```
 
-## Sterowanie
+## Controls
 
-- **Ustawienie statków**: Wprowadź współrzędne początkowe i końcowe statku.
-- **Atak**: Wprowadź współrzędne pola, które chcesz zaatakować (np. B7).
+- **Setting Ships**: Enter the starting and ending coordinates of the ship.
+- **Attack**: Enter the coordinates of the cell you want to attack (e.g., B7).
 
-## Autor
+## Author
 
-- **Adrian Sudak** - Autor projektu.
+- **Adrian Sudak** - Project author.
 
-## Licencja
+## License
 
-Ten projekt jest licencjonowany na warunkach licencji MIT.
+This project is licensed under the MIT License.
 
 ---
 
-## Opis Techniczny
+## Technical Description
 
-### Struktura Katalogów
+### Directory Structure
 
 ```
 gra-w-statki/
 │
-├── gra-w-statki/           # Katalog z projektem
-│       # Pliki nagłówkowe
+├── gra-w-statki/           # Project directory
+│       # Header files
 │   ├── Player.h
 │   ├── Ships.h
 │   ├── ShipsInConsole.h
 │   ├── Game.h
 │   └── Engine.h
-│       # Pliki źródłowe
+│       # Source files
 │   ├── gra-w-statki.cpp
 │   ├── Player.cpp
-│   ├── Ships.h
+│   ├── Ships.cpp
 │   ├── ShipsInConsole.cpp
 │   ├── Game.cpp
 │   └── Engine.cpp
-└── README.md               # Plik README
+└── README.md               # README file
 ```
 
-### Technologie
+### Technologies
 
-- **C++** - Główny język programowania
-- **Konsola** - Interfejs użytkownika
+- **C++** - Main programming language
+- **Console** - User interface
 
-### Przykładowy Kod
+### Sample Code
 
 #### gra-w-statki.cpp
 ```cpp
@@ -113,6 +113,6 @@ int main() {
 }
 ```
 
-## Uwagi
+## Notes
 
-Ten projekt jest częścią zaliczenia na przedmioty Programowanie Obiektowe na Studiach.
+This project is part of the Object-Oriented Programming course requirements.
