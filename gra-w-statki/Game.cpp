@@ -10,8 +10,8 @@ void Game::play() {
 
     setPlayerNames();
 
-    // Ustawianie statków
-    for (int k = 0; k < 2; k++) {
+    // Ustawianie statkÃ³w
+    for (int k = 0; k < 8; k++) {
         for (int i = 0; i < currentPlayer->N; i++) {
             showBoard(true);
             currentPlayer->ships[i].setShip(getFieldToSetShip(shipsQueue[i]));
